@@ -1,15 +1,16 @@
 import random
+
 total = 0
-for x in range(1,101):
-    total += x 
+for x in range(1, 101):
+    total += x
 print(total)
 
 total2 = 0
-for x in range(1,101,2):
+for x in range(1, 101, 2):
     total2 += x
 print(total2)
 
-answer = random.randint(1,100)
+answer = random.randint(1, 100)
 counter = 0
 while True:
     counter += 1
@@ -19,12 +20,12 @@ while True:
     elif guess < answer:
         print("too low")
     else:
-        print("you got it in "+str(counter)+" tries")
+        print("you got it in " + str(counter) + " tries")
         break
-print("the answer is "+str(answer) + ", you got it in "+str(counter)+" tries")
+print("the answer is " + str(answer) + ", you got it in " + str(counter) + " tries")
 
 
-for i in range(1,10):
-    for j in range(1,10):
-        print(str(i)+"*"+str(j)+"="+str(i*j))
+for i in range(1, 10):
+    for j in range(1, 10):
+        print(str(i) + "*" + str(j) + "=" + str(i * j))
     print("\n")
